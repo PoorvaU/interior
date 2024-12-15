@@ -83,10 +83,10 @@ function ServicePage() {
   }
 
   return (
-    <div className="w-full min-h-screen bg-gray-50 py-12 px-0">
+    <div className="w-full min-h-screen bg-gray-50 py-12 px-4 md:px-6">
       <h2 className="text-4xl font-serif text-center text-teal-800 mb-6">{service.title}</h2>
       <p className="text-lg text-gray-700 text-center mb-8">{service.description}</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full px-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
         {service.images.map((src, index) => (
           <img
             key={index}
